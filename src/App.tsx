@@ -14,7 +14,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route path="/">
-          <H1>Welcome to the starter!!</H1>
+          <StyledH1>Welcome to the starter!!!</StyledH1>
         </Route>
         <Route>
           <Redirect to="/" />
@@ -26,6 +26,6 @@ const App: React.FC = () => {
 
 export default App;
 
-const H1 = styled.h1`
-  color: blue;
+const StyledH1 = styled.h1`
+  color: yellow;
 `;
