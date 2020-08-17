@@ -5,6 +5,7 @@ const createStyledComponentsTransformer = require("typescript-plugin-styled-comp
   .default;
 const styledComponentsTransformer = createStyledComponentsTransformer();
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -60,5 +61,6 @@ module.exports = {
       template: "public/index.html",
     }),
     new ReactRefreshWebpackPlugin(),
+    new Dotenv(),
   ],
 };
